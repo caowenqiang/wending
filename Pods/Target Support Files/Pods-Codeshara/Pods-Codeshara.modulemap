@@ -1,0 +1,6 @@
+framework module Pods_Codeshara {
+  umbrella header "Pods-Codeshara-umbrella.h"
+
+  export *
+  module * { export * }
+}

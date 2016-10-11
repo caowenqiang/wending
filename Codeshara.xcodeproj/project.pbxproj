@@ -12,9 +12,16 @@
 		BC5006641DAC7812007E3EE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5006621DAC7812007E3EE7 /* Main.storyboard */; };
 		BC5006661DAC7812007E3EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5006651DAC7812007E3EE7 /* Assets.xcassets */; };
 		BC5006691DAC7812007E3EE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5006671DAC7812007E3EE7 /* LaunchScreen.storyboard */; };
+		BC5006741DAC79C0007E3EE7 /* CStabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5006731DAC79C0007E3EE7 /* CStabBarController.swift */; };
+		BC6116AD1DAC829700309A41 /* CSLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6116AC1DAC829700309A41 /* CSLoginViewController.swift */; };
+		BC6116AF1DACBEF300309A41 /* CSRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6116AE1DACBEF300309A41 /* CSRegisterViewController.swift */; };
+		D0A1D57AA7ECA1242BC867C1 /* Pods_Codeshara.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BB020F542BC48420FE3B00 /* Pods_Codeshara.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A02E0BA1D8AD184BDA3A0A7 /* Pods-Codeshara.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codeshara.release.xcconfig"; path = "Pods/Target Support Files/Pods-Codeshara/Pods-Codeshara.release.xcconfig"; sourceTree = "<group>"; };
+		A8BB020F542BC48420FE3B00 /* Pods_Codeshara.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Codeshara.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44AC2534E8F3FFB122D5A56 /* Pods-Codeshara.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codeshara.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Codeshara/Pods-Codeshara.debug.xcconfig"; sourceTree = "<group>"; };
 		BC50065B1DAC7812007E3EE7 /* Codeshara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codeshara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC50065E1DAC7812007E3EE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC5006601DAC7812007E3EE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		BC5006651DAC7812007E3EE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC5006681DAC7812007E3EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC50066A1DAC7812007E3EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC5006731DAC79C0007E3EE7 /* CStabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CStabBarController.swift; sourceTree = "<group>"; };
+		BC6116AC1DAC829700309A41 /* CSLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSLoginViewController.swift; sourceTree = "<group>"; };
+		BC6116AE1DACBEF300309A41 /* CSRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSRegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0A1D57AA7ECA1242BC867C1 /* Pods_Codeshara.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49B82326D62CFB316018CB70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8BB020F542BC48420FE3B00 /* Pods_Codeshara.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC5006521DAC7811007E3EE7 = {
 			isa = PBXGroup;
 			children = (
 				BC50065D1DAC7812007E3EE7 /* Codeshara */,
 				BC50065C1DAC7812007E3EE7 /* Products */,
+				ECAD2D759AEC612F2F9CB23C /* Pods */,
+				49B82326D62CFB316018CB70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +75,9 @@
 		BC50065D1DAC7812007E3EE7 /* Codeshara */ = {
 			isa = PBXGroup;
 			children = (
+				BC5006701DAC7967007E3EE7 /* Controller */,
+				BC5006711DAC7967007E3EE7 /* Model */,
+				BC5006721DAC7967007E3EE7 /* View */,
 				BC50065E1DAC7812007E3EE7 /* AppDelegate.swift */,
 				BC5006601DAC7812007E3EE7 /* ViewController.swift */,
 				BC5006621DAC7812007E3EE7 /* Main.storyboard */,
@@ -64,6 +88,39 @@
 			path = Codeshara;
 			sourceTree = "<group>";
 		};
+		BC5006701DAC7967007E3EE7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC5006731DAC79C0007E3EE7 /* CStabBarController.swift */,
+				BC6116AC1DAC829700309A41 /* CSLoginViewController.swift */,
+				BC6116AE1DACBEF300309A41 /* CSRegisterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC5006711DAC7967007E3EE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC5006721DAC7967007E3EE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECAD2D759AEC612F2F9CB23C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B44AC2534E8F3FFB122D5A56 /* Pods-Codeshara.debug.xcconfig */,
+				8A02E0BA1D8AD184BDA3A0A7 /* Pods-Codeshara.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC50066D1DAC7812007E3EE7 /* Build configuration list for PBXNativeTarget "Codeshara" */;
 			buildPhases = (
+				E9AD1D37F466FB75549BCD97 /* [CP] Check Pods Manifest.lock */,
 				BC5006571DAC7812007E3EE7 /* Sources */,
 				BC5006581DAC7812007E3EE7 /* Frameworks */,
 				BC5006591DAC7812007E3EE7 /* Resources */,
+				1CD3313644B6F1ED18EE037E /* [CP] Embed Pods Frameworks */,
+				86D7192BC202995A475DFAF7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,12 +190,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CD3313644B6F1ED18EE037E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Codeshara/Pods-Codeshara-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86D7192BC202995A475DFAF7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Codeshara/Pods-Codeshara-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9AD1D37F466FB75549BCD97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC5006571DAC7812007E3EE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC6116AD1DAC829700309A41 /* CSLoginViewController.swift in Sources */,
+				BC5006741DAC79C0007E3EE7 /* CStabBarController.swift in Sources */,
 				BC5006611DAC7812007E3EE7 /* ViewController.swift in Sources */,
+				BC6116AF1DACBEF300309A41 /* CSRegisterViewController.swift in Sources */,
 				BC50065F1DAC7812007E3EE7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +360,7 @@
 		};
 		BC50066E1DAC7812007E3EE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B44AC2534E8F3FFB122D5A56 /* Pods-Codeshara.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Codeshara/Info.plist;
@@ -260,6 +372,7 @@
 		};
 		BC50066F1DAC7812007E3EE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A02E0BA1D8AD184BDA3A0A7 /* Pods-Codeshara.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Codeshara/Info.plist;
@@ -288,6 +401,7 @@
 				BC50066F1DAC7812007E3EE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -18,8 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         //封装一个设置 window 的根控制器的方法
         self.configurePootVC()
-        
+        //设置MObSMSSDK
+        setupMob()
         return true
+    }
+    func setupMob(){
+        SMSSDK.registerApp(MobApp, withSecret: MobSecret)
     }
     func configurePootVC(){
         window = UIWindow.init(frame: UIScreen.mainScreen().bounds)

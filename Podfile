@@ -9,4 +9,13 @@ target 'Codeshara' do
  pod "JKCategories"
 
  pod "Alamofire","~> 3.0"
+
+ pod "MOBFoundation_IDFA"
+ #短信发送
+ pod "SMSSDK"
+ pod "ReactiveCocoa", "~> 4.0"
+ #处理项目中所有的键盘问题
+ pod "IQKeyboardManager","~>3.0"
+ #全屏侧滑
+ pod "FDFullscreenPopGesture"
 end

@@ -20,23 +20,23 @@ class CSLoginViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.title = "登录"
         self.view.backgroundColor = UIColor.whiteColor()
-        let usename = UITextField.init()
+        let username = UITextField.init()
     
-        usename.placeholder = "输入邮箱或密码"
-        usename.font = UIFont.systemFontOfSize(15)
-        usename.backgroundColor = UIColor.whiteColor()
+        username.placeholder = "输入邮箱或密码"
+        username.font = UIFont.systemFontOfSize(15)
+        username.backgroundColor = UIColor.whiteColor()
         
-        self.view.addSubview(usename)
+        self.view.addSubview(username)
         //设置约束  必须能唯一确定视图的位置和大小
-        usename.snp_makeConstraints { (make) in
+        username.snp_makeConstraints { (make) in
             make.top.equalTo(100)
             make.left.equalTo(0)
             make.right.equalTo(0)
             make.height.equalTo(48)
         }
         //设置输入框边框
-        usename.layer.borderColor = UIColor.grayColor().CGColor
-        usename.layer.borderWidth = 1.0
+        username.layer.borderColor = UIColor.grayColor().CGColor
+        username.layer.borderWidth = 1.0
         
         let password = UITextField.init()
         password.placeholder = "输入密码"
@@ -45,7 +45,7 @@ class CSLoginViewController: UIViewController {
         self.view.addSubview(password)
         //设置约束
         password.snp_makeConstraints { (make) in
-            make.top.equalTo(usename.snp_bottom)
+            make.top.equalTo(username.snp_bottom)
             make.left.right.equalTo(0)
             make.height.equalTo(48)
             
@@ -58,8 +58,8 @@ class CSLoginViewController: UIViewController {
         let passLeft = UIView.init()
         let nameImage = UIImageView.init(image: UIImage.init(named: "用户图标"))
         nameLeft.addSubview(nameImage)
-        usename.leftView = nameLeft
-        usename.leftViewMode = UITextFieldViewMode.Always
+        username.leftView = nameLeft
+        username.leftViewMode = UITextFieldViewMode.Always
         nameLeft.snp_makeConstraints { (make) in
             make.size.equalTo(CGSizeMake(64, 48))
         }
@@ -108,7 +108,7 @@ class CSLoginViewController: UIViewController {
 //        点击事件 
         login.jk_handleControlEvents(.TouchUpInside) { (sender) in
             
-            Alamofire.request(.POST,"https:www.1000phone.tk",parameters: ["service":"User.Register","phone":usename.text!,"password":password.text!],encoding: ParameterEncoding.URLEncodedInURL,headers: nil).responseJSON(completionHandler: { (response) in
+            Alamofire.request(.POST,"https:www.1000phone.tk",parameters: ["service":"User.Register","phone":username.text!,"password":password.text!],encoding: ParameterEncoding.URLEncodedInURL,headers: nil).responseJSON(completionHandler: { (response) in
                 if response.result.isSuccess{
                     print("ewge")
                     self.navigationController?.dismissViewControllerAnimated(true, completion: nil)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1EF8A31DADD5FD00370052 /* CodeShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1EF8A21DADD5FD00370052 /* CodeShare.swift */; };
 		BC50065F1DAC7812007E3EE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50065E1DAC7812007E3EE7 /* AppDelegate.swift */; };
 		BC5006611DAC7812007E3EE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5006601DAC7812007E3EE7 /* ViewController.swift */; };
 		BC5006641DAC7812007E3EE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5006621DAC7812007E3EE7 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		8A02E0BA1D8AD184BDA3A0A7 /* Pods-Codeshara.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codeshara.release.xcconfig"; path = "Pods/Target Support Files/Pods-Codeshara/Pods-Codeshara.release.xcconfig"; sourceTree = "<group>"; };
 		A8BB020F542BC48420FE3B00 /* Pods_Codeshara.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Codeshara.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B44AC2534E8F3FFB122D5A56 /* Pods-Codeshara.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codeshara.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Codeshara/Pods-Codeshara.debug.xcconfig"; sourceTree = "<group>"; };
+		BC1EF8A21DADD5FD00370052 /* CodeShare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeShare.swift; sourceTree = "<group>"; };
 		BC50065B1DAC7812007E3EE7 /* Codeshara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codeshara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC50065E1DAC7812007E3EE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC5006601DAC7812007E3EE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +34,7 @@
 		BC5006731DAC79C0007E3EE7 /* CStabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CStabBarController.swift; sourceTree = "<group>"; };
 		BC6116AC1DAC829700309A41 /* CSLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSLoginViewController.swift; sourceTree = "<group>"; };
 		BC6116AE1DACBEF300309A41 /* CSRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSRegisterViewController.swift; sourceTree = "<group>"; };
+		BC7AFA9F1DADDD8400EE12CD /* CodeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 		BC5006521DAC7811007E3EE7 = {
 			isa = PBXGroup;
 			children = (
+				BC7AFA9F1DADDD8400EE12CD /* CodeHeader.h */,
 				BC50065D1DAC7812007E3EE7 /* Codeshara */,
 				BC50065C1DAC7812007E3EE7 /* Products */,
 				ECAD2D759AEC612F2F9CB23C /* Pods */,
@@ -84,6 +88,7 @@
 				BC5006651DAC7812007E3EE7 /* Assets.xcassets */,
 				BC5006671DAC7812007E3EE7 /* LaunchScreen.storyboard */,
 				BC50066A1DAC7812007E3EE7 /* Info.plist */,
+				BC1EF8A21DADD5FD00370052 /* CodeShare.swift */,
 			);
 			path = Codeshara;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 				BC5006741DAC79C0007E3EE7 /* CStabBarController.swift in Sources */,
 				BC5006611DAC7812007E3EE7 /* ViewController.swift in Sources */,
 				BC6116AF1DACBEF300309A41 /* CSRegisterViewController.swift in Sources */,
+				BC1EF8A31DADD5FD00370052 /* CodeShare.swift in Sources */,
 				BC50065F1DAC7812007E3EE7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,8 +371,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Codeshara/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = qianfeng.Codeshara;
+				PRODUCT_BUNDLE_IDENTIFIER = com.1000phone.CodeShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/qianfeng/Desktop/高级网络联系/Codeshara/CodeHeader.h";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
@@ -377,8 +385,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Codeshara/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = qianfeng.Codeshara;
+				PRODUCT_BUNDLE_IDENTIFIER = com.1000phone.CodeShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/qianfeng/Desktop/高级网络联系/Codeshara/CodeHeader.h";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Release;
 		};

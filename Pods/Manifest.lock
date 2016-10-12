@@ -1,6 +1,5 @@
 PODS:
   - Alamofire (3.4.1)
-<<<<<<< HEAD
   - JKCategories (1.3)
   - SnapKit (0.21.1)
 
@@ -15,15 +14,5 @@ SPEC CHECKSUMS:
   SnapKit: bbad04cb016c7cead63965f16b00c09318d271ee
 
 PODFILE CHECKSUM: 2238b5eff5009416c24eddda73775e164fc331be
-=======
-
-DEPENDENCIES:
-  - Alamofire (~> 3.0)
-
-SPEC CHECKSUMS:
-  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
-
-PODFILE CHECKSUM: e0fb4f5a44b286f41283ede3d62a0a5f36ad0634
->>>>>>> d13258ec671dce589a11fc153424ed5bc04f5a62
 
 COCOAPODS: 1.0.1

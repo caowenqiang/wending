@@ -1,6 +1,0 @@
-framework module Pods_IpaDown_SWift {
-  umbrella header "Pods-IpaDown_SWift-umbrella.h"
-
-  export *
-  module * { export * }
-}

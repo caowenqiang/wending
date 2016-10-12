@@ -9,29 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-<<<<<<< HEAD
 		<key>JKCategories.xcscheme</key>
-=======
-		<key>Pods-IpaDown_SWift.xcscheme</key>
->>>>>>> d13258ec671dce589a11fc153424ed5bc04f5a62
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-<<<<<<< HEAD
 		<key>Pods-Codeshara.xcscheme</key>
-=======
-		<key>Pods-IpaDown_SWiftTests.xcscheme</key>
->>>>>>> d13258ec671dce589a11fc153424ed5bc04f5a62
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-<<<<<<< HEAD
 		<key>SnapKit.xcscheme</key>
-=======
-		<key>Pods-IpaDown_SWiftUITests.xcscheme</key>
->>>>>>> d13258ec671dce589a11fc153424ed5bc04f5a62
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -39,38 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-<<<<<<< HEAD
 		<key>2F263779439E238A99A58F98484D5C57</key>
-=======
-		<key>19CA98CD0E3115AE3556E54E7AFF50D4</key>
->>>>>>> d13258ec671dce589a11fc153424ed5bc04f5a62
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-<<<<<<< HEAD
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
-=======
-		<key>1C123EFEF1298911E1CCF0779DB94085</key>
->>>>>>> d13258ec671dce589a11fc153424ed5bc04f5a62
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-<<<<<<< HEAD
 		<key>917942188B2480D49E70E47ACE1C6BA9</key>
-=======
-		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
->>>>>>> d13258ec671dce589a11fc153424ed5bc04f5a62
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-<<<<<<< HEAD
 		<key>A1D78AEEC07E238B2987B517E9AE5CB5</key>
-=======
-		<key>FACEF447431F847F49385FDF51467843</key>
->>>>>>> d13258ec671dce589a11fc153424ed5bc04f5a62
 		<dict>
 			<key>primary</key>
 			<true/>

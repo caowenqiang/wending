@@ -11,7 +11,7 @@ import Alamofire
 import ReactiveCocoa
 import JKCategories
 //注册
-class CSRegisterViewController: UIViewController {
+class CSRegisterViewController: ViewController {
 
     dynamic var time = -1
     var timer : NSTimer!
@@ -132,7 +132,7 @@ class CSRegisterViewController: UIViewController {
         codeBtn.jk_setBackgroundColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         codeBtn.jk_setBackgroundColor(UIColor.lightGrayColor(), forState: UIControlState.Disabled)
         codeBtn.jk_setBackgroundColor(UIColor.darkGrayColor(), forState: UIControlState.Highlighted)
-        
+//        codeBtn.enabled = false
         code.rightView = codeRight
         code.rightViewMode = UITextFieldViewMode.Always
         codeRight.snp_makeConstraints { (make) in
@@ -180,7 +180,7 @@ class CSRegisterViewController: UIViewController {
 //     用rac 订阅输入框的信号 根据输入内容 改变按钮状态 属性
         username.rac_textSignal().subscribeNext { (sender) in
             let name = sender as! NSString
-            //决定按钮状态的条件
+            //决定按钮状态的条件 
             codeBtn.enabled = name.length == 11 && self.time == -1
             if name.length >= 11{
                 password.becomeFirstResponder()
@@ -254,20 +254,32 @@ class CSRegisterViewController: UIViewController {
 
         //注册
         registerBtn.jk_handleControlEvents(UIControlEvents.TouchUpInside) { (sender) in
-            Alamofire.request(.POST,"https:www.1000phone.tk",
-                parameters: ["service":"User.Register",
-                    "phone":username.text!,
-                    "password":(password.text! as NSString).jk_md5String,
-                    "vwrificationCode":code.text!],
-                encoding: ParameterEncoding.URLEncodedInURL,
-                headers: nil).responseJSON(completionHandler: { (response) in
-                if response.result.isSuccess{
-                    print(response.result.value!)
+//            Alamofire.request(.POST,"https:www.1000phone.tk",
+//                parameters: ["service":"User.Register",
+//                    "phone":username.text!,
+//                    "password":(password.text! as NSString).jk_md5String,
+//                    "verificationCode":code.text!],
+//                encoding: ParameterEncoding.URLEncodedInURL,
+//                headers: nil).responseJSON(completionHandler: { (response) in
+//                if response.result.isSuccess{
+//                    print(response.result.value!)
+//                    self.navigationController?.popViewControllerAnimated(true)
+//                }else{
+//                   print("网络不个力哦")
+//                }
+//                
+//            })
+            CSNetHelp.request(paremeters:[
+                "service":"User.Register",
+                "phone":username.text!,
+                "password":(password.text! as NSString).jk_md5String,
+                "verificationCode": code.text!])
+            .responseJSON({ (data, success) in
+                if success{
                     self.navigationController?.popViewControllerAnimated(true)
                 }else{
-                   print("网络不个力哦")
+                    UIAlertView.init(title:"有错误", message: data as? String , delegate: nil, cancelButtonTitle: "我知道了").show()
                 }
-                
             })
         
         }

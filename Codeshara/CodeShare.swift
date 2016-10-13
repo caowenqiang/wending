@@ -7,10 +7,12 @@
 //
 
 import Foundation
-
-let QFAppBaseURL = "http://www.1000phone.ml/"
-
-
+//测试接口
+#if false
+    let QFAppBaseURL = "http://10.12.155.20/PhalApi/Public/CodeShare/"
+#else
+    let QFAppBaseURL = "http://www.1000phone.tk/"
+#endif
 let QFResourceBaseUrl = "http://www.1000phone.tk/upload/QFApi"
 //
 let MobApp = "142d07ce785cb"

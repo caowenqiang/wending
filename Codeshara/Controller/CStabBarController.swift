@@ -18,7 +18,7 @@ class CStabBarController: UITabBarController {
     }
     
     func configureViewControllers(){
-        let vcInfos = [["title":"主页","image":"tabbar_1","class":"UIViewController"],["title":"消息","image":"tabbar_1","class":"UIViewController"],["title":"分享","image":"tabbar_1","class":"UIViewController"],["title":"我的","image":"tabbar_1","class":"UIViewController"]]
+        let vcInfos = [["title":"主页","image":"按钮主页","class":"Codeshara.ViewController"],["title":"消息","image":"按钮消息","class":"Codeshara.ViewController"],["title":"分享","image":"按钮分享","class":"Codeshara.ViewController"],["title":"我的","image":"按钮我的","class":"Codeshara.CSMyVideoListViewController"]]
         var vcArr : [UINavigationController] = []
         for vcInfo in vcInfos{
     
@@ -30,12 +30,23 @@ class CStabBarController: UITabBarController {
             vcArr.append(navVC)
         }
         self.viewControllers = vcArr
+        //设置taBar的图片
+        var i = 0
+        for tabBarItem in self.tabBar.items! {
+            tabBarItem.image = UIImage.init(named: vcInfos[i]["image"]!)
+            i = i + 1
+        }
+        //设置选中状态下 tabBar 的颜色
+        self.tabBar.tintColor = UIColor ( red: 0.5725, green: 0.7961, blue: 0.2549, alpha: 1.0 )
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        let loginVC = UINavigationController.init(rootViewController: CSLoginViewController.init())
-        loginVC.view.backgroundColor = UIColor.whiteColor()
-        self.presentViewController(loginVC, animated: true, completion: nil)
+        if CSUserModel.isLogin() == false{
+            let loginVC = UINavigationController.init(rootViewController: CSLoginViewController.init())
+            loginVC.view.backgroundColor = UIColor.whiteColor()
+            self.presentViewController(loginVC, animated: true, completion: nil)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

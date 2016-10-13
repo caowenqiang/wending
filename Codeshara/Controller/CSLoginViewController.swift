@@ -12,7 +12,7 @@ import UIKit
 import SnapKit
 import JKCategories
 import Alamofire
-class CSLoginViewController: UIViewController {
+class CSLoginViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,6 +92,10 @@ class CSLoginViewController: UIViewController {
             make.width.equalTo(72)
             make.height.equalTo(56)
         }
+        
+        //
+        forgetPass.addTarget(self, action: #selector(forgetAction), forControlEvents: UIControlEvents.TouchUpInside)
+        
         //登录密码
         let login = UIButton.init(type: UIButtonType.Custom)
         login.titleLabel?.font = UIFont.systemFontOfSize(15)
@@ -105,19 +109,51 @@ class CSLoginViewController: UIViewController {
         login.jk_setBackgroundColor(UIColor.lightGrayColor(), forState: UIControlState.Disabled)
 //        高亮状态
         login.jk_setBackgroundColor(UIColor.darkGrayColor(), forState: .Highlighted)
+        
+        login.enabled = false
+//        用rac 订阅输入框改变的信号  根据输入的内容改变按钮的状态
+        username.rac_textSignal().subscribeNext { (sender) in
+            let name = sender as! NSString
+            if name.length >= 11{
+                password.becomeFirstResponder()
+            }
+        }
+//        将几个信号框的信号合并为一个信号 （代替delegate）
+        username.rac_textSignal()
+        .combineLatestWith(password.rac_textSignal())
+        .subscribeNext { (sender) in
+            login.enabled = ((username.text! as NSString).length == 11 && (password.text! as NSString).length >= 6)
+        }
+            
+       
+        
+        
+        
 //        点击事件 
         login.jk_handleControlEvents(.TouchUpInside) { (sender) in
             
-            Alamofire.request(.POST,"https:www.1000phone.tk",parameters: ["service":"User.Register","phone":username.text!,"password":password.text!],encoding: ParameterEncoding.URLEncodedInURL,headers: nil).responseJSON(completionHandler: { (response) in
-                if response.result.isSuccess{
-                    print("ewge")
+//            Alamofire.request(.POST,"https:www.1000phone.tk",parameters: ["service":"User.Register","phone":username.text!,"password":password.text!],encoding: ParameterEncoding.URLEncodedInURL,headers: nil).responseJSON(completionHandler: { (response) in
+//                if response.result.isSuccess{
+//                    print("ewge")
+//                    self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+//                }else{
+//                    print("网络不个力哦")
+//                }
+//                
+//            })
+            
+        CSNetHelp.request(paremeters: [
+            "service":"User.Login",
+            "phone":username.text!,
+            "password":(password.text! as NSString).jk_md5String])
+            .responseJSON({ (data, success) in
+                if success{
+                    CSUserModel.login(with: data as! [String:AnyObject])
                     self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
                 }else{
-                    print("网络不个力哦")
+                    UIAlertView.init(title: "错误", message: data as? String, delegate: nil, cancelButtonTitle: "我知道了").show()
                 }
-                
             })
-            
 
         }
        
@@ -130,13 +166,13 @@ class CSLoginViewController: UIViewController {
         }
         //导航条上的按钮
         //返回按钮
-        let backBtn = UIButton.init(type: UIButtonType.Custom)
-        backBtn.setImage(UIImage.init(named: "返回按钮"), forState: UIControlState.Normal)
-//        将Button转换为UIBarButtonItem类型
-        let backBarBtn = UIBarButtonItem.init(customView: backBtn)
-        self.navigationItem.leftBarButtonItem = backBarBtn
-        backBtn.frame = CGRectMake(0, 0, 24, 32)
-         backBtn.addTarget(self, action: #selector(self.back), forControlEvents: UIControlEvents.TouchUpInside)
+//        let backBtn = UIButton.init(type: UIButtonType.Custom)
+//        backBtn.setImage(UIImage.init(named: "返回按钮"), forState: UIControlState.Normal)
+////        将Button转换为UIBarButtonItem类型
+//        let backBarBtn = UIBarButtonItem.init(customView: backBtn)
+//        self.navigationItem.leftBarButtonItem = backBarBtn
+//        backBtn.frame = CGRectMake(0, 0, 24, 32)
+//         backBtn.addTarget(self, action: #selector(self.back), forControlEvents: UIControlEvents.TouchUpInside)
         //注册按钮
         let registerBtn = UIButton.init(type: UIButtonType.Custom)
         registerBtn.setTitle("注册", forState: UIControlState.Normal)
@@ -149,9 +185,15 @@ class CSLoginViewController: UIViewController {
         registerBtn.addTarget(self, action: #selector(self.register), forControlEvents: UIControlEvents.TouchUpInside)
        
     }
-    func back(){
-        self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+//    忘记密码
+    func forgetAction(){
+        self.navigationController?.pushViewController(CSForgetViewController.init(), animated: true)
     }
+//    返回
+//    func back(){
+//        self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+//    }
+//    注册
     func register(){
         self.navigationController?.pushViewController(CSRegisterViewController.init(), animated: true)
     }

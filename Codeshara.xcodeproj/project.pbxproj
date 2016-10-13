@@ -16,6 +16,15 @@
 		BC5006741DAC79C0007E3EE7 /* CStabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5006731DAC79C0007E3EE7 /* CStabBarController.swift */; };
 		BC6116AD1DAC829700309A41 /* CSLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6116AC1DAC829700309A41 /* CSLoginViewController.swift */; };
 		BC6116AF1DACBEF300309A41 /* CSRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6116AE1DACBEF300309A41 /* CSRegisterViewController.swift */; };
+		BC7D73C71DAE7182008ECCE6 /* CSForgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7D73C61DAE7182008ECCE6 /* CSForgetViewController.swift */; };
+		BC7D73CA1DAF205E008ECCE6 /* CSNetHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7D73C91DAF205E008ECCE6 /* CSNetHelp.swift */; };
+		BC7D73CC1DAF3BFB008ECCE6 /* CSUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7D73CB1DAF3BFB008ECCE6 /* CSUserModel.swift */; };
+		BCCBB84A1DAF6792000B7FDA /* CSHiep.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCBB8491DAF6792000B7FDA /* CSHiep.swift */; };
+		BCCBB84C1DAF81A5000B7FDA /* CSTabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCBB84B1DAF81A5000B7FDA /* CSTabelViewController.swift */; };
+		BCCBB84E1DAF867A000B7FDA /* CSMyVideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCBB84D1DAF867A000B7FDA /* CSMyVideoListViewController.swift */; };
+		BCCBB8501DAF875F000B7FDA /* CSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCBB84F1DAF875F000B7FDA /* CSModel.swift */; };
+		BCCBB8531DAF8A48000B7FDA /* CSMyVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCBB8511DAF8A48000B7FDA /* CSMyVideoCell.swift */; };
+		BCCBB8541DAF8A48000B7FDA /* CSMyVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCBB8521DAF8A48000B7FDA /* CSMyVideoCell.xib */; };
 		D0A1D57AA7ECA1242BC867C1 /* Pods_Codeshara.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BB020F542BC48420FE3B00 /* Pods_Codeshara.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +44,15 @@
 		BC6116AC1DAC829700309A41 /* CSLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSLoginViewController.swift; sourceTree = "<group>"; };
 		BC6116AE1DACBEF300309A41 /* CSRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSRegisterViewController.swift; sourceTree = "<group>"; };
 		BC7AFA9F1DADDD8400EE12CD /* CodeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeHeader.h; sourceTree = "<group>"; };
+		BC7D73C61DAE7182008ECCE6 /* CSForgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSForgetViewController.swift; sourceTree = "<group>"; };
+		BC7D73C91DAF205E008ECCE6 /* CSNetHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSNetHelp.swift; sourceTree = "<group>"; };
+		BC7D73CB1DAF3BFB008ECCE6 /* CSUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSUserModel.swift; sourceTree = "<group>"; };
+		BCCBB8491DAF6792000B7FDA /* CSHiep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSHiep.swift; sourceTree = "<group>"; };
+		BCCBB84B1DAF81A5000B7FDA /* CSTabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSTabelViewController.swift; sourceTree = "<group>"; };
+		BCCBB84D1DAF867A000B7FDA /* CSMyVideoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMyVideoListViewController.swift; sourceTree = "<group>"; };
+		BCCBB84F1DAF875F000B7FDA /* CSModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSModel.swift; sourceTree = "<group>"; };
+		BCCBB8511DAF8A48000B7FDA /* CSMyVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMyVideoCell.swift; sourceTree = "<group>"; };
+		BCCBB8521DAF8A48000B7FDA /* CSMyVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSMyVideoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +97,7 @@
 		BC50065D1DAC7812007E3EE7 /* Codeshara */ = {
 			isa = PBXGroup;
 			children = (
+				BC7D73C81DAF2022008ECCE6 /* Help */,
 				BC5006701DAC7967007E3EE7 /* Controller */,
 				BC5006711DAC7967007E3EE7 /* Model */,
 				BC5006721DAC7967007E3EE7 /* View */,
@@ -99,6 +118,9 @@
 				BC5006731DAC79C0007E3EE7 /* CStabBarController.swift */,
 				BC6116AC1DAC829700309A41 /* CSLoginViewController.swift */,
 				BC6116AE1DACBEF300309A41 /* CSRegisterViewController.swift */,
+				BC7D73C61DAE7182008ECCE6 /* CSForgetViewController.swift */,
+				BCCBB84B1DAF81A5000B7FDA /* CSTabelViewController.swift */,
+				BCCBB84D1DAF867A000B7FDA /* CSMyVideoListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -106,6 +128,8 @@
 		BC5006711DAC7967007E3EE7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BC7D73CB1DAF3BFB008ECCE6 /* CSUserModel.swift */,
+				BCCBB84F1DAF875F000B7FDA /* CSModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -113,8 +137,19 @@
 		BC5006721DAC7967007E3EE7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BCCBB8511DAF8A48000B7FDA /* CSMyVideoCell.swift */,
+				BCCBB8521DAF8A48000B7FDA /* CSMyVideoCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BC7D73C81DAF2022008ECCE6 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				BC7D73C91DAF205E008ECCE6 /* CSNetHelp.swift */,
+				BCCBB8491DAF6792000B7FDA /* CSHiep.swift */,
+			);
+			path = Help;
 			sourceTree = "<group>";
 		};
 		ECAD2D759AEC612F2F9CB23C /* Pods */ = {
@@ -188,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC5006691DAC7812007E3EE7 /* LaunchScreen.storyboard in Resources */,
+				BCCBB8541DAF8A48000B7FDA /* CSMyVideoCell.xib in Resources */,
 				BC5006661DAC7812007E3EE7 /* Assets.xcassets in Resources */,
 				BC5006641DAC7812007E3EE7 /* Main.storyboard in Resources */,
 			);
@@ -248,12 +284,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7D73CA1DAF205E008ECCE6 /* CSNetHelp.swift in Sources */,
 				BC6116AD1DAC829700309A41 /* CSLoginViewController.swift in Sources */,
 				BC5006741DAC79C0007E3EE7 /* CStabBarController.swift in Sources */,
 				BC5006611DAC7812007E3EE7 /* ViewController.swift in Sources */,
+				BCCBB84E1DAF867A000B7FDA /* CSMyVideoListViewController.swift in Sources */,
+				BCCBB8501DAF875F000B7FDA /* CSModel.swift in Sources */,
 				BC6116AF1DACBEF300309A41 /* CSRegisterViewController.swift in Sources */,
+				BCCBB84A1DAF6792000B7FDA /* CSHiep.swift in Sources */,
+				BCCBB84C1DAF81A5000B7FDA /* CSTabelViewController.swift in Sources */,
+				BC7D73C71DAE7182008ECCE6 /* CSForgetViewController.swift in Sources */,
 				BC1EF8A31DADD5FD00370052 /* CodeShare.swift in Sources */,
 				BC50065F1DAC7812007E3EE7 /* AppDelegate.swift in Sources */,
+				BC7D73CC1DAF3BFB008ECCE6 /* CSUserModel.swift in Sources */,
+				BCCBB8531DAF8A48000B7FDA /* CSMyVideoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

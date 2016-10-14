@@ -18,7 +18,7 @@ class CStabBarController: UITabBarController {
     }
     
     func configureViewControllers(){
-        let vcInfos = [["title":"主页","image":"按钮主页","class":"Codeshara.ViewController"],["title":"消息","image":"按钮消息","class":"Codeshara.ViewController"],["title":"分享","image":"按钮分享","class":"Codeshara.ViewController"],["title":"我的","image":"按钮我的","class":"Codeshara.CSMyVideoListViewController"]]
+        let vcInfos = [["title":"主页","image":"按钮主页","class":"Codeshara.ViewController"],["title":"消息","image":"按钮消息","class":"Codeshara.ViewController"],["title":"分享","image":"按钮分享","class":"Codeshara.CSScrollerViewController"],["title":"我的","image":"按钮我的","class":"Codeshara.CSMyInfoViewController"]]
         var vcArr : [UINavigationController] = []
         for vcInfo in vcInfos{
     

@@ -35,9 +35,14 @@ class CSTabelViewController: ViewController {
         
         return tabelView
     }()
+    //防止导航盖住tabelView的属性
     var contenInset = UIEdgeInsetsZero{
         didSet{
+            //当我们在外部自定义ConteInsert
             tableView.contentInset = contenInset
+            tableView.scrollIndicatorInsets = contenInset
+            //设置偏移量
+            tableView.contentOffset = CGPointMake(0, -contenInset.top)
         }
     }
     override func viewDidLoad() {
@@ -49,7 +54,7 @@ class CSTabelViewController: ViewController {
         tableView.snp_makeConstraints { (make) in
             make.edges.equalTo(0)
         }
-        contenInset = UIEdgeInsetsMake(topBarHeight, 0, tabBarHeight, 0)
+//        contenInset = UIEdgeInsetsMake(topBarHeight, 0, tabBarHeight, 0)
     }
 
     override func didReceiveMemoryWarning() {

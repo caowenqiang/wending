@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
     func configureBackItem(){
         //如果是 push 的控制器，那么返回按钮响应的是 app， 否则是 dismiss
-        if self.navigationController?.presentingViewController == nil && self.navigationController?.viewControllers.first != self ||
+        if (self.navigationController?.presentingViewController == nil && self.navigationController?.viewControllers.first != self) ||
         self.navigationController?.presentingViewController != nil
         {
 //            符合条件的都加上返回按钮
@@ -38,10 +38,11 @@ class ViewController: UIViewController {
                 backBtn.frame = CGRectMake(0, 0, 32, 32)
                 let backItem = UIBarButtonItem.init(customView: backBtn)
                 self.navigationItem.leftBarButtonItem = backItem
-        }else{
-//            self.hidesBottomBarWhenPushed = true
         }
-        
+        //只有不是present 出的导航控制器的第二个控制器，需要 添加这个属性
+        if self.navigationController?.presentingViewController == nil && self.navigationController?.viewControllers.count >= 2 && self.navigationController?.viewControllers[2] == self {
+            self.hidesBottomBarWhenPushed = true
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -62,13 +63,21 @@ extension UIViewController{
         return (self.navigationController?.navigationBar.frame.size.height)!
     }
     var tabBarHeight: CGFloat{
-        if self.hidesBottomBarWhenPushed == true{
+        if self.navigationController?.presentingViewController == nil && self.navigationController?.viewControllers.first == self
+        {
             return (self.tabBarController?.tabBar.frame.size.height)!
         }else{
             return 0
         }
     }
     var topBarHeight: CGFloat{
-        return statusBarHeight + naviBarHeight
+        if self.navigationController != nil{
+            return statusBarHeight + naviBarHeight
+         }
+        else{
+            
+            return 0
+        }
+ 
     }
 }

@@ -12,6 +12,13 @@ class CSMyVideoListViewController: CSTabelViewController {
 
     //构造假数据
     var cellInfos : [[String: String]] = []
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(WithStyle: .Plain)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     //模拟数据模型
     var cellModels : [AnyObject] = []
     
@@ -24,26 +31,26 @@ class CSMyVideoListViewController: CSTabelViewController {
     }
     func getData(){
         cellInfos = [
-        ["title":"杭州",
+        ["title":"杭州铁笼沉尸案主犯获死刑",
             "imageUrl":"视频",
             "videoUrl":"http://www.baidu.com"],
-        ["title":"杭州",
-            "imageUrl":"视频",
-            "videoUrl":"http://www.baidu.com"],
-
-        ["title":"杭州",
+        ["title":"杭州铁笼沉尸案主犯获死刑",
             "imageUrl":"视频",
             "videoUrl":"http://www.baidu.com"],
 
-        ["title":"杭州",
+        ["title":"杭州铁笼沉尸案主犯获死刑",
             "imageUrl":"视频",
             "videoUrl":"http://www.baidu.com"],
 
-        ["title":"杭州",
+        ["title":"杭州铁笼沉尸案主犯获死刑",
             "imageUrl":"视频",
             "videoUrl":"http://www.baidu.com"],
 
-        ["title":"杭州",
+        ["title":"杭州铁笼沉尸案主犯获死刑",
+            "imageUrl":"视频",
+            "videoUrl":"http://www.baidu.com"],
+
+        ["title":"杭州铁笼沉尸案主犯获死刑",
             "imageUrl":"视频",
             "videoUrl":"http://www.baidu.com"],
 
@@ -78,5 +85,8 @@ extension CSMyVideoListViewController{
         cell.configure(withModel: cellModels[indexPath.row] as! CSMyVideoModel)
         return cell
         
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }

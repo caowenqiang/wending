@@ -14,3 +14,14 @@ class CSMyVideoModel: NSObject {
     var videoSize = ""
     
 }
+class CSMyImageModel: NSObject {
+    var imageUrl = ""
+}
+class CSMyFileModel: NSObject {
+    var title : String = ""
+    var imageUrl = ""
+    var from = ""
+    var fileSize = ""
+    
+}
+

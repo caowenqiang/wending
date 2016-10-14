@@ -25,6 +25,17 @@
 		BCCBB8501DAF875F000B7FDA /* CSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCBB84F1DAF875F000B7FDA /* CSModel.swift */; };
 		BCCBB8531DAF8A48000B7FDA /* CSMyVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCBB8511DAF8A48000B7FDA /* CSMyVideoCell.swift */; };
 		BCCBB8541DAF8A48000B7FDA /* CSMyVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCBB8521DAF8A48000B7FDA /* CSMyVideoCell.xib */; };
+		BCCBB85E1DB0695D000B7FDA /* Reusable+CSExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCBB85D1DB0695D000B7FDA /* Reusable+CSExtensions.swift */; };
+		BCCBB8671DB06FBD000B7FDA /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCBB8611DB06FBD000B7FDA /* UIView+Frame.m */; };
+		BCCBB8681DB06FBD000B7FDA /* YZDisplayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCBB8631DB06FBD000B7FDA /* YZDisplayTitleLabel.m */; };
+		BCCBB8691DB06FBD000B7FDA /* YZDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCBB8651DB06FBD000B7FDA /* YZDisplayViewController.m */; };
+		BCCBB86B1DB0714D000B7FDA /* CSMyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCBB86A1DB0714D000B7FDA /* CSMyInfoViewController.swift */; };
+		BCCBB86D1DB076A5000B7FDA /* CSMyFileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCBB86C1DB076A5000B7FDA /* CSMyFileListViewController.swift */; };
+		BCCBB8721DB078DB000B7FDA /* CSMyFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCBB8701DB078DB000B7FDA /* CSMyFileCell.swift */; };
+		BCCBB8731DB078DB000B7FDA /* CSMyFileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCBB8711DB078DB000B7FDA /* CSMyFileCell.xib */; };
+		BCCBB8751DB08B49000B7FDA /* CSMyPhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCBB8741DB08B49000B7FDA /* CSMyPhotoListViewController.swift */; };
+		BCCBB8771DB08DE9000B7FDA /* CSMyPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCBB8761DB08DE9000B7FDA /* CSMyPhotoCell.swift */; };
+		BCE1E2171DB0B3FB00D890B0 /* CSScrollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE1E2161DB0B3FB00D890B0 /* CSScrollerViewController.swift */; };
 		D0A1D57AA7ECA1242BC867C1 /* Pods_Codeshara.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BB020F542BC48420FE3B00 /* Pods_Codeshara.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +64,21 @@
 		BCCBB84F1DAF875F000B7FDA /* CSModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSModel.swift; sourceTree = "<group>"; };
 		BCCBB8511DAF8A48000B7FDA /* CSMyVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMyVideoCell.swift; sourceTree = "<group>"; };
 		BCCBB8521DAF8A48000B7FDA /* CSMyVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSMyVideoCell.xib; sourceTree = "<group>"; };
+		BCCBB85D1DB0695D000B7FDA /* Reusable+CSExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reusable+CSExtensions.swift"; sourceTree = "<group>"; };
+		BCCBB8601DB06FBD000B7FDA /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		BCCBB8611DB06FBD000B7FDA /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		BCCBB8621DB06FBD000B7FDA /* YZDisplayTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayTitleLabel.h; sourceTree = "<group>"; };
+		BCCBB8631DB06FBD000B7FDA /* YZDisplayTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZDisplayTitleLabel.m; sourceTree = "<group>"; };
+		BCCBB8641DB06FBD000B7FDA /* YZDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayViewController.h; sourceTree = "<group>"; };
+		BCCBB8651DB06FBD000B7FDA /* YZDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZDisplayViewController.m; sourceTree = "<group>"; };
+		BCCBB8661DB06FBD000B7FDA /* YZDisplayViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayViewHeader.h; sourceTree = "<group>"; };
+		BCCBB86A1DB0714D000B7FDA /* CSMyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMyInfoViewController.swift; sourceTree = "<group>"; };
+		BCCBB86C1DB076A5000B7FDA /* CSMyFileListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMyFileListViewController.swift; sourceTree = "<group>"; };
+		BCCBB8701DB078DB000B7FDA /* CSMyFileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMyFileCell.swift; sourceTree = "<group>"; };
+		BCCBB8711DB078DB000B7FDA /* CSMyFileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSMyFileCell.xib; sourceTree = "<group>"; };
+		BCCBB8741DB08B49000B7FDA /* CSMyPhotoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMyPhotoListViewController.swift; sourceTree = "<group>"; };
+		BCCBB8761DB08DE9000B7FDA /* CSMyPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMyPhotoCell.swift; sourceTree = "<group>"; };
+		BCE1E2161DB0B3FB00D890B0 /* CSScrollerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSScrollerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +104,7 @@
 		BC5006521DAC7811007E3EE7 = {
 			isa = PBXGroup;
 			children = (
+				BCCBB85F1DB06FBD000B7FDA /* YZDisplayViewController */,
 				BC7AFA9F1DADDD8400EE12CD /* CodeHeader.h */,
 				BC50065D1DAC7812007E3EE7 /* Codeshara */,
 				BC50065C1DAC7812007E3EE7 /* Products */,
@@ -121,6 +148,10 @@
 				BC7D73C61DAE7182008ECCE6 /* CSForgetViewController.swift */,
 				BCCBB84B1DAF81A5000B7FDA /* CSTabelViewController.swift */,
 				BCCBB84D1DAF867A000B7FDA /* CSMyVideoListViewController.swift */,
+				BCCBB86A1DB0714D000B7FDA /* CSMyInfoViewController.swift */,
+				BCCBB86C1DB076A5000B7FDA /* CSMyFileListViewController.swift */,
+				BCCBB8741DB08B49000B7FDA /* CSMyPhotoListViewController.swift */,
+				BCE1E2161DB0B3FB00D890B0 /* CSScrollerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -139,6 +170,9 @@
 			children = (
 				BCCBB8511DAF8A48000B7FDA /* CSMyVideoCell.swift */,
 				BCCBB8521DAF8A48000B7FDA /* CSMyVideoCell.xib */,
+				BCCBB8701DB078DB000B7FDA /* CSMyFileCell.swift */,
+				BCCBB8711DB078DB000B7FDA /* CSMyFileCell.xib */,
+				BCCBB8761DB08DE9000B7FDA /* CSMyPhotoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,10 +180,25 @@
 		BC7D73C81DAF2022008ECCE6 /* Help */ = {
 			isa = PBXGroup;
 			children = (
+				BCCBB85D1DB0695D000B7FDA /* Reusable+CSExtensions.swift */,
 				BC7D73C91DAF205E008ECCE6 /* CSNetHelp.swift */,
 				BCCBB8491DAF6792000B7FDA /* CSHiep.swift */,
 			);
 			path = Help;
+			sourceTree = "<group>";
+		};
+		BCCBB85F1DB06FBD000B7FDA /* YZDisplayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BCCBB8601DB06FBD000B7FDA /* UIView+Frame.h */,
+				BCCBB8611DB06FBD000B7FDA /* UIView+Frame.m */,
+				BCCBB8621DB06FBD000B7FDA /* YZDisplayTitleLabel.h */,
+				BCCBB8631DB06FBD000B7FDA /* YZDisplayTitleLabel.m */,
+				BCCBB8641DB06FBD000B7FDA /* YZDisplayViewController.h */,
+				BCCBB8651DB06FBD000B7FDA /* YZDisplayViewController.m */,
+				BCCBB8661DB06FBD000B7FDA /* YZDisplayViewHeader.h */,
+			);
+			path = YZDisplayViewController;
 			sourceTree = "<group>";
 		};
 		ECAD2D759AEC612F2F9CB23C /* Pods */ = {
@@ -222,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCBB8731DB078DB000B7FDA /* CSMyFileCell.xib in Resources */,
 				BC5006691DAC7812007E3EE7 /* LaunchScreen.storyboard in Resources */,
 				BCCBB8541DAF8A48000B7FDA /* CSMyVideoCell.xib in Resources */,
 				BC5006661DAC7812007E3EE7 /* Assets.xcassets in Resources */,
@@ -288,16 +338,26 @@
 				BC6116AD1DAC829700309A41 /* CSLoginViewController.swift in Sources */,
 				BC5006741DAC79C0007E3EE7 /* CStabBarController.swift in Sources */,
 				BC5006611DAC7812007E3EE7 /* ViewController.swift in Sources */,
+				BCCBB8771DB08DE9000B7FDA /* CSMyPhotoCell.swift in Sources */,
 				BCCBB84E1DAF867A000B7FDA /* CSMyVideoListViewController.swift in Sources */,
 				BCCBB8501DAF875F000B7FDA /* CSModel.swift in Sources */,
 				BC6116AF1DACBEF300309A41 /* CSRegisterViewController.swift in Sources */,
+				BCCBB8681DB06FBD000B7FDA /* YZDisplayTitleLabel.m in Sources */,
 				BCCBB84A1DAF6792000B7FDA /* CSHiep.swift in Sources */,
 				BCCBB84C1DAF81A5000B7FDA /* CSTabelViewController.swift in Sources */,
 				BC7D73C71DAE7182008ECCE6 /* CSForgetViewController.swift in Sources */,
+				BCCBB8721DB078DB000B7FDA /* CSMyFileCell.swift in Sources */,
+				BCCBB85E1DB0695D000B7FDA /* Reusable+CSExtensions.swift in Sources */,
 				BC1EF8A31DADD5FD00370052 /* CodeShare.swift in Sources */,
 				BC50065F1DAC7812007E3EE7 /* AppDelegate.swift in Sources */,
+				BCE1E2171DB0B3FB00D890B0 /* CSScrollerViewController.swift in Sources */,
 				BC7D73CC1DAF3BFB008ECCE6 /* CSUserModel.swift in Sources */,
+				BCCBB8671DB06FBD000B7FDA /* UIView+Frame.m in Sources */,
+				BCCBB8751DB08B49000B7FDA /* CSMyPhotoListViewController.swift in Sources */,
 				BCCBB8531DAF8A48000B7FDA /* CSMyVideoCell.swift in Sources */,
+				BCCBB86D1DB076A5000B7FDA /* CSMyFileListViewController.swift in Sources */,
+				BCCBB86B1DB0714D000B7FDA /* CSMyInfoViewController.swift in Sources */,
+				BCCBB8691DB06FBD000B7FDA /* YZDisplayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
